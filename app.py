@@ -6,13 +6,13 @@ from prompts import (
 )
 from azure_client import generate_response
 
-st.set_page_config(page_title="Customer Support Response Generator")
+st.set_page_config(page_title="Customer Support ChatBot")
 
-st.title("📩 Customer Support Response Generator")
+st.title("Customer Support ChatBot")
 st.write("Enterprise-grade Prompt-Based AI System (Azure OpenAI)")
 
-company_name = st.text_input("Company Name", "Acme Corp")
-product_name = st.text_input("Product Name", "Acme App")
+company_name = st.text_input("Company Name", "PhonePe")
+product_name = st.text_input("Product Name", "PhonePe App")
 
 issue_type = st.selectbox(
     "Issue Type",
@@ -53,5 +53,5 @@ if st.button("Generate Response"):
 
         response = generate_response(final_prompt)
 
-        st.subheader("✅ Generated Customer Support Response")
+        st.subheader(" Generated Customer Support Response")
         st.success(response)

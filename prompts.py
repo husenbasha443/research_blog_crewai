@@ -1,5 +1,3 @@
-# prompts.py
-
 GENERAL_SUPPORT_PROMPT = """
 You are a professional customer support executive for {company_name}.
 
